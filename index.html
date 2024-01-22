@@ -2,99 +2,195 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Solution</title>
-    <!-- tailwind & daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- google font EB Garamond & poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Solution</title>
+  <!-- tailwind & daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font EB Garamond & poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
     rel="stylesheet">
-    <!-- font awesome cnd -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- tailwind custom color -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'main': '#B68C5A',
-              }
-            }
+  <!-- font awesome cnd -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- tailwind custom color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'main': '#B68C5A',
           }
         }
-      </script>
+      }
+    }
+  </script>
 
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .font-heading{
-          font-family: 'EB Garamond', serif;
-        }
-        .font-body{
-          font-family: 'Poppins', sans-serif;
-        }
-    </style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .font-heading {
+      font-family: 'EB Garamond', serif;
+    }
+
+    .font-body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
 
 <body class="container px-28 mx-auto my-6">
-   <header class="container mx-auto">
+  <header class="container mx-auto">
     <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Cases</i></a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact Us</a></li>
-            </ul>
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
-          <img class="w-32" src="./images/logo2.png" alt="">
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-[#707070]">
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
             <li><a>Home</a></li>
-            <li><a>Services <i class="fa-solid fa-angle-right"></i></a></li>
-            <li><a>Cases <i class="fa-solid fa-angle-right"></i></a></li>
-            <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
-            <li><a>Contact Us <i class="fa-solid fa-angle-right"></i></a></li>
+            <li><a>Services</a></li>
+            <li><a>Cases</i></a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <a class="btn bg-main hidden md:flex lg:flex text-white">Free Consultation</a>
+        <img class="w-32" src="./images/logo2.png" alt="">
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-[#707070]">
+          <li><a>Home</a></li>
+          <li><a>Services <i class="fa-solid fa-angle-right"></i></a></li>
+          <li><a>Cases <i class="fa-solid fa-angle-right"></i></a></li>
+          <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
+          <li><a>Contact Us <i class="fa-solid fa-angle-right"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-main hidden md:flex lg:flex text-white">Free Consultation</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- banner section -->
+    <section
+      class="container mx-auto bg-[linear-gradient(to_right_bottom,#111,rgba(10,19,2,0.1)),url(./images/banner.png)] border-2 h-[450px] lg:h-[600px] bg-no-repeat bg-cover bg-center rounded-xl mt-12">
+      <div class="w-full text-white flex flex-col text-center justify-center items-center h-full gap-5">
+        <h1 class="text-xl lg:text-5xl font-bold font-heading">We Provide Effective <br> Legal Solutions</h1>
+        <p class="lg:text-xl font-body">Law regulates human behavior within a society, providing <br> a framework for
+          justice and order.</p>
+        <div class="lg:flex gap-3 hidden ">
+          <input type="text" placeholder="Search your services" class="input input-bordered input-md w-[350px] p-5" />
+          <button class="btn bg-main border-none w-[120px] text-white">Search</button>
         </div>
       </div>
-   </header>
-   <main>
-     <!-- banner section -->
-     <section class="container mx-auto bg-[linear-gradient(to_right_bottom,#111,rgba(10,19,2,0.1)),url(./images/banner.png)] border-2 h-[450px] lg:h-[600px] bg-no-repeat bg-cover bg-center rounded-xl mt-12">
-        <div class="w-full text-white flex flex-col text-center justify-center items-center h-full gap-5">
-            <h1 class="text-xl lg:text-5xl font-bold font-heading">We Provide Effective <br> Legal Solutions</h1>
-            <p class="lg:text-xl font-body">Law regulates human behavior within a society, providing <br> a framework for justice and order.</p>
-            <div class="lg:flex gap-3 hidden ">
-              <input type="text" placeholder="Search your services" class="input input-bordered input-md w-[350px] p-5" />
-            <button class="btn bg-main border-none w-[120px] text-white">Search</button>
+    </section>
+    <!-- practice area -->
+    <section class="">
+      <div class="flex flex-col justify-center items-center text-center gap-6 mt-16">
+        <h3 class="text-xl lg:text-5xl font-bold font-heading">The Legal Practice Area</h3>
+        <p class="font-body text-[#707070] text-xl">The legal practice area encompasses a broad spectrum of specialties, from <br>
+          litigation and contracts to intellectual property and family law.</p>
+      </div>
+      <div>
+        <!-- card -->
+        <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 mt-16 gap-6">
+          <!-- first card -->
+          <div class="card w-80 gap-3">
+            <figure class="px-10 pt-10">
+              <img src="./images/business.png" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center gap-3">
+              <h2 class="font-heading text-2xl font-extrabold">Business Law</h2>
+              <p class="text-[#707070]">Business law governs commercial transactions, contracts, and corporate structures, ensuring legal compliance.</p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="">
+              </div>
             </div>
-        </div>
-     </section>
-     <!-- practice area -->
-     <section>
-      
-     </section>
-   </main>
-   <footer>
+          </div>
+          <!-- second card -->
+          <div class="card w-80 bg-base-100  bg-[#E7E7E7] gap-3">
+            <figure class="px-10 pt-10">
+              <img src="./images/criminal.png" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center gap-3">
+              <h2 class="font-heading text-2xl font-extrabold">Criminal Law</h2>
+              <p class="text-[#707070]">Criminal law prosecutes offenses, ensuring justice through investigations, trials, and penalties.</p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="card w-80 bg-base-100 gap-3">
+            <figure class="px-10 pt-10">
+              <img src="./images/child.png" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center gap-3">
+              <h2 class="font-heading text-2xl font-extrabold">Child Support</h2>
+              <p class="text-[#707070]">Child support ensures financial aid for children, promoting their well-being and stability.</p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- fourth card -->
+          <div class="card w-80 bg-base-100  gap-3">
+            <figure class="px-10 pt-10">
+              <img src="./images/education.png" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center gap-3">
+              <h2 class="font-heading text-2xl font-extrabold">Educational Law</h2>
+              <p class="text-[#707070]">Educational law governs school policies, ensuring fair treatment and quality education.</p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- fifth card -->
+          <div class="card w-80  gap-3">
+            <figure class="px-10 pt-10">
+              <img src="./images/divorce.png" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center gap-3">
+              <h2 class="font-heading text-2xl font-extrabold">Divorce Law</h2>
+              <p class="text-[#707070]">Divorce law resolves marital disputes, addressing assets, custody, and alimony arrangements.</p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- sixth card -->
+          <div class="card w-80 bg-base-100  gap-3">
+            <figure class="px-10 pt-10">
+              <img src="./images/tax.png" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center gap-3">
+              <h2 class="font-heading text-2xl font-extrabold">Tax Law</h2>
+              <p class="text-[#707070]">Tax law regulates financial obligations, ensuring compliance and fair revenue distribution.</p>
+              <div class="card-actions">
+                <img src="./images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
 
-   </footer>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
