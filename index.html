@@ -22,6 +22,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'main': '#B68C5A',
               }
             }
           }
@@ -32,13 +33,17 @@
         *{
             margin: 0;
             padding: 0;
-            font-family: 'EB Garamond', serif;
-            font-family: 'Poppins', sans-serif;
+        }
+        .font-heading{
+          font-family: 'EB Garamond', serif;
+        }
+        .font-body{
+          font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
 
-<body class="container px-28 mx-auto">
+<body class="container px-28 mx-auto my-6">
    <header class="container mx-auto">
     <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -66,16 +71,20 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn bg-[#B68C5A] hidden md:flex lg:flex text-white">Free Consultation</a>
+          <a class="btn bg-main hidden md:flex lg:flex text-white">Free Consultation</a>
         </div>
       </div>
    </header>
    <main>
      <!-- banner section -->
-     <section class="container mx-auto">
-        <div style="background-image:url(./images/banner1.png);" class="w-full h-60 lg:h-[600px] bg-no-repeat object-fill">
-            <h1 class="text-5xl font-bold">We Provide Effective Legal Solutions</h1>
-            <p>Law regulates human behavior within a society, providing a framework for justice and order. It encompasses rules, rights, and consequences, shaping fair and ethical interactions among individuals.</p>
+     <section class="container mx-auto bg-[linear-gradient(to_right_bottom,#111,rgba(10,19,2,0.1)),url(./images/banner.png)] border-2 h-[450px] lg:h-[600px] bg-no-repeat bg-cover bg-center rounded-xl mt-12">
+        <div class="w-full text-white flex flex-col text-center justify-center items-center h-full gap-5">
+            <h1 class="text-xl lg:text-5xl font-bold font-heading">We Provide Effective <br> Legal Solutions</h1>
+            <p class="lg:text-xl font-body">Law regulates human behavior within a society, providing <br> a framework for justice and order.</p>
+            <div class="lg:flex gap-3 hidden ">
+              <input type="text" placeholder="Search your services" class="input input-bordered input-md w-[350px] p-5" />
+            <button class="btn bg-main border-none w-[120px] text-white">Search</button>
+            </div>
         </div>
      </section>
      <!-- practice area -->
